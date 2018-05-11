@@ -10,7 +10,8 @@ class Typer extends Component {
     this.state = {
       messages: ['programming', 'testing', 'automating', 'designing'],
       m_index: 0,
-      m_faded: false
+      m_faded: false,
+      pulser: ''
     };
   }
 
@@ -21,58 +22,32 @@ class Typer extends Component {
         opacity: 1
     });
 
-    var pulserText = this.pulser();
+    this.timerID = setInterval(
+        () => this.pulse(),
+        2400
+    );
+    //this.setState({pulser: pulser});
   }
+
+  pulse(){
+    console.log("BEKFAST");
+    this.flipText();
+  }
+    
 
   // upon leaving, stop timer
   componentWillUnmount() {
     clearInterval(this.timerID);
   }
 
-  pulser(){
-      setInterval(this.fadeToggle(), 1000);
-  }
- 
-  fadeToggle(){
-    if(this.m_faded){
-        return anime({
-            targets: '#slideSource',
-            opacity: 1,
-            delay: 1000,
-            complete: function(anim) {
-                
-            }
-        });
-    } else {
-        return anime({
-            targets: '#slideSource',
-            opacity: 0,
-            delay: 1000,
-            complete: function(anim) {
-                
-            }
-        });
-
-    }
+  flipText (){
+    var t = (this.state.m_index < this.state.messages.length - 1) ? this.setState({m_index: this.state.m_index+1}) : this.setState({m_index: 0});
   }
   
  
 
 
-  render() {
-
-
-      
-
-      return (
-
-            <div id="slideSource">{this.state.messages[this.state.m_index]}</div>
-
-        
-
-        );
-      }
-      
+  render() {return (<a id="slideSource" style={{color: '#00ccff'}}>{this.state.messages[this.state.m_index]}</a>);}   
   }
   
   export default Typer;

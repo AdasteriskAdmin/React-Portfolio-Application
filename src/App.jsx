@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
-
+import { Jumbotron, Button, Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import Home from './pages/Home';
 import Account from './pages/Account';
 import MatchError from './pages/MatchError';
@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar color="light" light expand="md">
+          <Navbar light expand="md" style={{backgroundColor: '#333333', color: '#fff'}}>
             <div className="container">
               <NavbarBrand href="/">Kaiserr</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
@@ -68,7 +68,7 @@ class App extends Component {
               </Collapse>
             </div>
           </Navbar>
-          <div className="container page-body">
+          <div className="page-body">
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/account" component={Account} />
@@ -77,10 +77,32 @@ class App extends Component {
               <Redirect from='*' to='/404' />
             </Switch>
           </div>
-          <div className="container page-footer">
-            FOOTER 
+          <Container className="container page-footer">
+            <Row>
+              <Col>
+              <ListGroup>
+                <ListGroupItem>React.js</ListGroupItem>
+                <ListGroupItem>Reactstrap</ListGroupItem>
+                <ListGroupItem>Particles.js</ListGroupItem>
+                <ListGroupItem>Anime.js</ListGroupItem>
+                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+              </ListGroup>
+              
+              </Col>
+              <Col>
+                </Col>
+              <Col> 
+               
+              </Col>
+              <Col>
+                
 
-          </div>
+              
+              </Col>
+              
+            </Row>
+
+          </Container>
         </div>
         
       </Router>
