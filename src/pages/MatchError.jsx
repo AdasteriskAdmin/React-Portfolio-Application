@@ -6,7 +6,7 @@ class MatchError extends Component {
         return (
       
           <Container>
-             404 Page not found
+             <h1>404 Page not found</h1>
     
           </Container>
       

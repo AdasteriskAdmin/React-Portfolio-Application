@@ -12,12 +12,11 @@ class Header extends Component {
         <div className="main-wrapper" style={{ position: 'relative', width: '100%', height: '80vh', zIndex: '2'}}>
           <div className="foreground-wrapper">
             <Container>
-              <div style={{  position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0.7)', color: '#fff', margin: '10% 0%', padding: '30px'}}>
+              <div style={{  position: 'absolute', backgroundColor: 'rgba(0, 0, 0, 0)', color: '#fff', margin: '10% 0%', padding: '30px'}}>
                 <h1 style={{fontSize: '6rem'}}>Hello!</h1>
-                <h2>The name's Jeremy, I enjoy <Typer/></h2>
-                <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+                <h2>The name's Jeremy, I enjoy <Typer/>.</h2>
+                <p className="lead">Developer / Tester / Senior Intern</p>
                 <hr className="my-2" />
-                <p>It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
                 <p className="lead">
                   <Button color="primary">Learn More</Button>
                 </p>

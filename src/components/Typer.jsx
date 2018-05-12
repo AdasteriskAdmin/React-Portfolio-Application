@@ -8,7 +8,7 @@ class Typer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      messages: ['programming', 'testing', 'automating', 'designing'],
+      messages: ['programming', 'testing', 'automating', 'designing', 'dogs'],
       m_index: 0,
       m_faded: false,
       pulser: ''

@@ -13,74 +13,56 @@ class Home extends Component {
         <div>
           <Header/>
           <Container>
-          <h2>What I've done</h2>
+          
           <h4>Never. Stop. Learning</h4>
               <p>
-              As someone who was raised with technology, I have observed that the ever changing industry requires constant learning. 
-              It's an evolving market    
+              I am a 23 year old    
               </p>
+              <h2>Areas of Focus.</h2>
+              <h5>I typically like being involved in a handful of areas rather than one specific type of work. Like a jack of all trades</h5>
             <Row>
               <Col>
-                <h3>Programming</h3>
-              
+                <h3>PWA's</h3>
+                <p>Developing a SPA as a progressive web application? Sign me up!</p>
               </Col>
               <Col>
                 <h3>Automation</h3>
-                <p>Wether it is automating excel spreadsheets or speeding up build processes. I absolutely love developing automated processes to save time and remove human errors from repetitive tasks.</p>
+                <p>Automated testing. Custom build scripts. Useful excel macros. Yes, yes, and yes.</p>
               </Col>
               <Col> 
-                <h3>Testing</h3>
-                <p>Human error happens on both the users and developers (myself included) </p>
+                <h3>Programming</h3>
+                <p>Nohing more satisftying than writing than compiling with no build errors or warnings. I need to chase that high.</p>
               </Col>
               <Col>
                 <h3>UI/UX Design</h3>
-
+                <p>Terrible interfaces ruin software. Lets make easy, effective, and fun interfaces.</p>
+              
               
               </Col>
               
             </Row>
+           
             <h2>Expert of many, master of none.</h2>
-              <h4>Never. Stop. Learning</h4>
+              <h4>I never want to stop learning.</h4>
               <p>
-              As someone who was raised with technology, I have observed that the ever changing industry requires constant learning. 
-              It's an evolving market    
-              </p>
-            <Row>
-              <Col>
-                <h3>Programming</h3>
-              
-              </Col>
-              <Col>
-                <h3>Automation</h3>
-                <p>Wether it is automating excel spreadsheets or speeding up build processes. I absolutely love developing automated processes to save time and remove human errors from repetitive tasks.</p>
-              </Col>
-              <Col> 
-                <h3>Testing</h3>
-                <p>Human error happens on both the users and developers (myself included) </p>
-              </Col>
-              <Col>
-                <h3>UI/UX Design</h3>
-
-              
-              </Col>
-              
-            </Row>
-            <h2>Expert of many, master of none.</h2>
-              <h4>Never. Stop. Learning</h4>
-              <p>
-              As someone who was raised with technology, I have observed that the ever changing industry requires constant learning. 
-              It's an evolving market    
+              Learning new and old technologies alike are a necessity in this field. Being able to absorb & apply knowledge is ctirical for professional and personal development. Luckily I find it enjoyable which makes it a hobby other than a chore. 
               </p>
             <Row>
               <Col>
                 <h3>Things I like</h3>
-                <p>Trying out new frameworks, libraries, and projects</p>
+                <p>Learning</p>
+                <p>Experimenting with Tech - yes, lets try that new framework</p>
+                <p>Working - borderline workaholic</p>
+                <p>Javascript</p>
 
               
               </Col>
               <Col>
                 <h3>!(Things I like)</h3>
-                <p>Website builders - Sure they are "powerful" but it's not much use when you can't edit the code</p>
+                <p>Website builders - Lack of control upsets me</p>
+                <p>Ugly code - spaghetti is only good as food</p>
+                <p>Cryptocurrency - Get that blockchain out of here</p>
+                <p>Politics - it hurts to watch</p>
                </Col>
     
               
